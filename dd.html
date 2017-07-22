@@ -1,0 +1,8 @@
+
+<?php
+include "dbconnect.php";
+	$query = "SELECT resource_id FROM  personal WHERE user_id  = '1'";
+	$result = mysqli_query($db,$query);
+	$count = mysqli_num_rows($result);
+	echo "$count";
+   ?> 
